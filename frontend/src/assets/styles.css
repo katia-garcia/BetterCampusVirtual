@@ -1,3 +1,22 @@
 .bluebg {
-    background-color: #0473CC;
+  background-color: #0473CC;
 }
+
+.custom-card-asignatura {
+  width: 300px;
+  height: 200px;
+}
+
+.custom-titol {
+  font-size: 20px;
+  font-weight: bold;
+}
+.custom-sidebar-text {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.card-header {
+  background-color: #d9d9d9;
+}
+
