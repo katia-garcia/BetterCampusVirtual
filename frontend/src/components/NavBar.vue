@@ -2,7 +2,7 @@
   <div id="app">
     <b-navbar toggleable="lg" class="bluebg">
       <b-navbar-brand href="#">
-        <img src="https://www.eim.ub.edu/img/ub-theme/images/logo_ub_negre.png" width="130px"
+        <img src="https://www.iqtc.ub.edu/wp-content/themes/css-grid/img/logo_ub.png" width="130px"
              class="d-inline-block align-top" alt="ub-logo">
       </b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>

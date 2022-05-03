@@ -1,22 +1,40 @@
 .bluebg {
-  background-color: #0473CC;
+  background-color: #1687A7;
+}
+.bluesidebar {
+  background-color: #D3E0EA;
 }
 
 .custom-card-asignatura {
-  width: 300px;
-  height: 200px;
+  max-width: 280px;
+  min-width: 170px;
+  max-height: 200px;
+  min-height: 200px;
+  padding: 0;
+  margin: 0;
+  border: none
 }
 
 .custom-titol {
   font-size: 20px;
   font-weight: bold;
 }
+
 .custom-sidebar-text {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
+  color: #276678
 }
 
-.card-header {
-  background-color: #d9d9d9;
+.custom-margins-asignaturas {
+  padding-top: 35px;
+  padding-left: 55px;
+  padding-right: 60px;
 }
-
+@media (max-width: 978px) {
+  .custom-margins-asignaturas {
+    padding-top: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
