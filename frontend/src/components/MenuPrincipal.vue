@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div style="height:100vh">
     <NavBar></NavBar>
-    <b-container fluid>
+    <b-container fluid style="height: calc(100vh - 72px)">
       <b-row fluid style="height: 100%">
         <!-- sidebar -->
         <b-col class="bluesidebar" cols="3" style="padding-top: 15px; padding-left: 20px; padding-right: 20px">
