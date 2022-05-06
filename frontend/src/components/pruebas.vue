@@ -4,39 +4,36 @@
     <div class="parent-container d-flex" style="height: calc(100vh - 72px);">
       <!-- sidebar-->
       <div class="container custom-sidebar float-left" style="margin-top: 0;position:fixed;z-index:999;">
-        <div class="row" style="background-color: #9fcdff;">
-          <div class="col-1">
-            <b-icon-clipboard-check></b-icon-clipboard-check>
+        <div class="row align-items-center margins-sidebar"
+             style="background-color: #9fcdff;">
+          <div class="col text-center">
+            <b-icon-clipboard-check font-scale="1.8"></b-icon-clipboard-check>
           </div>
-          <div class="col d-none d-lg-block">
-            Qualificacions
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1">
-            <b-icon-megaphone></b-icon-megaphone>
-          </div>
-          <div class="col d-none d-lg-block">
-            Fòrum de la Facultat
+          <div class="col-10 d-none d-lg-block custom-text-title">Qualificacions
           </div>
         </div>
-        <div class="row">
-          <div class="col-1">
-            <b-icon-chat-dots></b-icon-chat-dots>
+        <div class="row align-items-center margins-sidebar">
+          <div class="col text-center">
+            <b-icon-megaphone font-scale="1.8"></b-icon-megaphone>
           </div>
-          <div class="col d-none d-lg-block">
-            Xat
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-1">
-            <b-icon-calendar-event></b-icon-calendar-event>
-          </div>
-          <div class="col d-none d-lg-block">
-            Calendari
+          <div class="col-10 d-none d-lg-block custom-text-title">Fòrum de la Facultat
           </div>
         </div>
-        <div class="row">
+        <div class="row align-items-center margins-sidebar">
+          <div class="col text-center">
+            <b-icon-chat-dots font-scale="1.8"></b-icon-chat-dots>
+          </div>
+          <div class="col-10 d-none d-lg-block custom-text-title">Xat
+          </div>
+        </div>
+        <div class="row align-items-center margins-sidebar">
+          <div class="col text-center">
+            <b-icon-calendar-event font-scale="1.8"></b-icon-calendar-event>
+          </div>
+          <div class="col-10 d-none d-lg-block custom-text-title">Calendari
+          </div>
+        </div>
+        <div class="row align-items-center margins-sidebar">
           <div class="col">
             <b-calendar class="d-none d-lg-block" style="margin-top: 20px;" block
             ></b-calendar>
@@ -57,8 +54,8 @@
                     <b-avatar></b-avatar>
                   </div>
                   <div class="card-body border" style="border-radius: 0">
-                    <b-row><p class="custom-titol">{{ asignatura }}</p></b-row>
-                    <b-row><p>Qualificació: 7.00</p></b-row>
+                    <b-row><p class="custom-titol custom-text-title">{{ asignatura }}</p></b-row>
+                    <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
                   </div>
                 </div>
               </div>
@@ -86,6 +83,19 @@ export default {
 
 <style scoped>
 @import '../assets/styles.css';
+
+.custom-text-title {
+  font-family: "Segoe UI", sans-serif;
+  font-size: 20px;
+}
+
+.custom-text-body {
+  font-family: "Roboto", sans-serif;
+}
+
+.margins-sidebar {
+  padding-top: 10px; padding-bottom: 10px
+}
 
 .row {
   width: 100%; margin: 0

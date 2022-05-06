@@ -22,8 +22,6 @@
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
-    <!--MENU LATERAL -->
-
   </div>
 </template>
 
