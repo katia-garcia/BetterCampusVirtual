@@ -3,37 +3,37 @@
     <NavBar></NavBar>
     <!-- sidebar-->
     <div class="container custom-sidebar float-left shadow">
-      <div class="row align-items-center margins-sidebar nav-sidebar">
+      <div class="row align-items-center margins-sidebar nav-sidebar" style="background-color: #accbee">
         <div class="col text-center">
-          <b-icon-clipboard-check font-scale="1.8"></b-icon-clipboard-check>
+          <b-icon-easel font-scale="1.8"></b-icon-easel>
         </div>
         <div class="col-10 d-none d-lg-block custom-text-title">Introducció
         </div>
       </div>
-      <div class="row align-items-center margins-sidebar nav-sidebar">
+      <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/qualificacions'">
         <div class="col text-center">
-          <b-icon-megaphone font-scale="1.8"></b-icon-megaphone>
+          <b-icon-clipboard-check font-scale="1.8"></b-icon-clipboard-check>
         </div>
         <div class="col-10 d-none d-lg-block custom-text-title">Qualificacions
         </div>
       </div>
       <div class="row align-items-center margins-sidebar nav-sidebar">
         <div class="col text-center">
-          <b-icon-chat-dots font-scale="1.8"></b-icon-chat-dots>
+          <b-icon-book font-scale="1.8"></b-icon-book>
         </div>
         <div class="col-10 d-none d-lg-block custom-text-title">Teoria
         </div>
       </div>
       <div class="row align-items-center margins-sidebar nav-sidebar">
         <div class="col text-center">
-          <b-icon-calendar-event font-scale="1.8"></b-icon-calendar-event>
+          <b-icon-laptop font-scale="1.8"></b-icon-laptop>
         </div>
         <div class="col-10 d-none d-lg-block custom-text-title">Pràctiques
         </div>
       </div>
       <div class="row align-items-center margins-sidebar nav-sidebar">
         <div class="col text-center">
-          <b-icon-calendar-event font-scale="1.8"></b-icon-calendar-event>
+          <b-icon-globe font-scale="1.8"></b-icon-globe>
         </div>
         <div class="col-10 d-none d-lg-block custom-text-title">Tauler del Curs
         </div>
