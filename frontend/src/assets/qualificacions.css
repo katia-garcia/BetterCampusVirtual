@@ -1,0 +1,68 @@
+html{
+  overflow-y: hidden;
+}
+.banner{
+  display: flex; 
+  flex-direction: row;
+}
+
+.accordion{
+  padding: 0 50px 0 50px; 
+}
+
+.mb-1{
+  background-color: white; 
+}
+
+.card-body{
+  padding: 0;
+}
+.accordion-button{
+  display: flex;
+  height: 3em; 
+  background-color: #66aae2; 
+  font-size: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+  border-radius:0px; 
+  border-color: #66aae2;
+  font-weight: bold;
+
+  margin: 0; 
+}
+
+.accordion-task-button{
+  display: flex;
+  height: 3em; 
+  background-color: #afd2ef; 
+  font-size: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+  border-radius:0px; 
+  border-color: #afd2ef;
+  color: black;
+  font-weight: bold;
+ 
+
+}
+
+.accordion-alumno-button{
+  display: flex;
+  height: 3em; 
+  background-color: #e5f1fa; 
+  font-size: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 30px;
+  border-radius:0px; 
+  border-color: #e5f1fa;
+  color: black;
+  font-weight: bold;
+}
+
+h1{
+  padding: 20px 20px 20px 50px; 
+  color:#0072CE; 
+}
