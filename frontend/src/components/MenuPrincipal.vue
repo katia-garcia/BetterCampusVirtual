@@ -68,6 +68,7 @@
 
 <script>
 import NavBar from './NavBar'
+
 export default {
   name: 'Pruebas',
   components: {NavBar},
@@ -75,6 +76,8 @@ export default {
     return {
       asignaturas: ['Lògica y Llenguatges', 'Factors Humans', 'Software Distribuït', 'Gràfics', 'Bases de Dades']
     }
+  },
+  methods: {
   }
 }
 
@@ -83,25 +86,50 @@ export default {
 <style scoped>
 @import '../assets/styles.css';
 
-.margins-sidebar {
-  padding-top: 15px; padding-bottom: 15px;
+.custom-titol {
+  font-size: 20px;
+  font-weight: bold;
 }
+
+.custom-card-asignatura {
+  max-width: 280px;
+  min-width: 170px;
+  max-height: 200px;
+  min-height: 200px;
+  padding: 0;
+  margin: 0;
+  border: none
+}
+
+.margins-sidebar {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
 .nav-sidebar:hover {
   background-color: #accbee;
 }
 
 .row {
-  width: 100%; margin: 0
+  width: 100%;
+  margin: 0
 }
 
 .custom-sidebar {
-  min-width: 350px; max-width: 350px;
-  background-color: #D3E0EA; height: 100%;
-  margin: 0; padding: 0; position:fixed;z-index:999;
+  min-width: 350px;
+  max-width: 350px;
+  background-color: #D3E0EA;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  z-index: 999;
 }
+
 @media (max-width: 992px) {
   .custom-sidebar {
-    min-width: 100px; max-width: 100px;
+    min-width: 100px;
+    max-width: 100px;
   }
 }
 
@@ -109,15 +137,11 @@ export default {
   margin-left: 350px;
   margin-top: 30px
 }
+
 @media (max-width: 992px) {
   .custom-no-sidebar {
     margin-left: 100px;
   }
-}
-
-.custom-titol {
-  font-size: 20px;
-  font-weight: bold;
 }
 
 .custom-margins-asignaturas {
@@ -125,6 +149,7 @@ export default {
   padding-left: 55px;
   padding-right: 60px;
 }
+
 @media (max-width: 978px) {
   .custom-margins-asignaturas {
     padding-top: 35px;

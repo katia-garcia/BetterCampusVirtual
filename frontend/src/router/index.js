@@ -2,6 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import MenuPrincipal from '@/components/MenuPrincipal'
 import Qualificacions from '@/components/Qualificacions'
+import Assignatura from '@/components/Assignatura'
+
 Vue.use(Router)
 
 export default new Router({
@@ -15,6 +17,11 @@ export default new Router({
       path: '/qualificacions',
       name: 'Qualificacions',
       component: Qualificacions
+    },
+    {
+      path: '/factorshumans',
+      name: 'Assignatura',
+      component: Assignatura
     }
   ]
 })

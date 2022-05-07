@@ -4,22 +4,10 @@
 .bluesidebar {
   background-color: #d2e8f6;
 }
-
 .custom-text-title {
   font-family: "Segoe UI", sans-serif;
   font-size: 20px;
 }
-
 .custom-text-body {
   font-family: "Roboto", sans-serif;
-}
-
-.custom-card-asignatura {
-  max-width: 280px;
-  min-width: 170px;
-  max-height: 200px;
-  min-height: 200px;
-  padding: 0;
-  margin: 0;
-  border: none
 }
