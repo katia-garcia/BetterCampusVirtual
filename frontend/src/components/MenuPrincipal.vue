@@ -1,87 +1,136 @@
 <template>
   <div>
-    <NavBar></NavBar>
-    <b-container fluid>
-      <b-row fluid style="height: 100%">
-        <!-- sidebar -->
-        <b-col class="bluesidebar" cols="3" style="padding-top: 15px; padding-left: 20px; padding-right: 20px">
-          <b-row>
-            <b-link href="#qualificacions" class="custom-sidebar-text d-none d-md-block">
-              <b-icon-clipboard-check></b-icon-clipboard-check>&nbsp;&nbsp;&nbsp;Qualificacions
-            </b-link>
-            <b-link class="custom-sidebar-text d-md-none" align="center">
-              <b-icon-clipboard-check></b-icon-clipboard-check>
-            </b-link>
-          </b-row>
-          <b-row style="margin-top: 10px">
-            <b-link class="custom-sidebar-text d-none d-md-block">
-              <b-icon-megaphone></b-icon-megaphone>&nbsp;&nbsp;&nbsp;Fòrum de la Facultat
-            </b-link>
-            <b-link class="custom-sidebar-text d-md-none" align="center">
-              <b-icon-megaphone></b-icon-megaphone>
-            </b-link>
-          </b-row>
-          <b-row style="margin-top: 10px">
-            <b-link class="custom-sidebar-text d-none d-md-block">
-              <b-icon-chat-dots></b-icon-chat-dots>&nbsp;&nbsp;&nbsp;Xat
-            </b-link>
-            <b-link class="custom-sidebar-text d-md-none" align="center">
-              <b-icon-chat-dots></b-icon-chat-dots>
-            </b-link>
-          </b-row>
-          <b-row style="margin-top: 10px">
-            <b-link class="custom-sidebar-text d-none d-md-block">
-              <b-icon-calendar-event></b-icon-calendar-event>&nbsp;&nbsp;&nbsp;Calendari
-            </b-link>
-            <b-link class="custom-sidebar-text d-md-none" align="center">
-              <b-icon-calendar-event></b-icon-calendar-event>
-            </b-link>
-          </b-row>
-          <b-calendar class="d-none d-xl-block" style="margin-top: 20px; " block
-                      nav-button-variant="primary"
-          ></b-calendar>
-        </b-col> <!-- END sidebar -->
-        <b-col class="custom-margins-asignaturas">
-          <!-- for asignaturas -->
-          <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4" v-for="(asignatura) in asignaturas" :key="asignatura">
-              <div class="card custom-card-asignatura">
-                <div class="card-header" style="background-color: #d9d9d9">
-                  <b-avatar></b-avatar>
-                  <b-avatar></b-avatar>
-                  <b-avatar></b-avatar>
-                </div>
-                <div class="card-body border" style="border-radius: 0">
-                  <b-row><p class="custom-titol">{{ asignatura }}</p></b-row>
-                  <b-row><p>Qualificació: 7.00</p></b-row>
+    <NavBar class="sticky-top"></NavBar>
+    <div class="parent-container d-flex" style="height: calc(100vh - 72px);">
+      <!-- sidebar-->
+      <div class="container custom-sidebar float-left shadow">
+        <div class="row align-items-center margins-sidebar nav-sidebar">
+          <div class="col text-center">
+            <b-icon-clipboard-check font-scale="1.8"></b-icon-clipboard-check>
+          </div>
+          <div class="col-10 d-none d-lg-block custom-text-title">Qualificacions
+          </div>
+        </div>
+        <div class="row align-items-center margins-sidebar nav-sidebar">
+          <div class="col text-center">
+            <b-icon-megaphone font-scale="1.8"></b-icon-megaphone>
+          </div>
+          <div class="col-10 d-none d-lg-block custom-text-title">Fòrum de la Facultat
+          </div>
+        </div>
+        <div class="row align-items-center margins-sidebar nav-sidebar">
+          <div class="col text-center">
+            <b-icon-chat-dots font-scale="1.8"></b-icon-chat-dots>
+          </div>
+          <div class="col-10 d-none d-lg-block custom-text-title">Xat
+          </div>
+        </div>
+        <div class="row align-items-center margins-sidebar nav-sidebar">
+          <div class="col text-center">
+            <b-icon-calendar-event font-scale="1.8"></b-icon-calendar-event>
+          </div>
+          <div class="col-10 d-none d-lg-block custom-text-title">Calendari
+          </div>
+        </div>
+        <div class="row align-items-center margins-sidebar">
+          <div class="col">
+            <b-calendar class="d-none d-lg-block" block
+            ></b-calendar>
+          </div>
+        </div>
+      </div>
+      <!-- END sidebar-->
+      <div class="container custom-no-sidebar" style="height: 100%">
+        <div class="row">
+          <div class="col">
+            <!-- for asignaturas -->
+            <div class="row">
+              <div class="col-lg-4 col-md-6 mb-4" v-for="(asignatura) in asignaturas" :key="asignatura">
+                <div class="card custom-card-asignatura">
+                  <div class="card-header" style="background-color: #d9d9d9">
+                    <b-avatar></b-avatar>
+                    <b-avatar></b-avatar>
+                    <b-avatar></b-avatar>
+                  </div>
+                  <div class="card-body border" style="border-radius: 0">
+                    <b-row><p class="custom-text-title custom-titol">{{ asignatura }}</p></b-row>
+                    <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
+                  </div>
                 </div>
               </div>
-            </div>
-          </div> <!-- END for asignaturas -->
-        </b-col>
-      </b-row>
-    </b-container>
+            </div> <!-- END for asignaturas -->
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
-<style scoped>
-@import '../assets/styles.css';
-@import '../assets/sd.css';
-</style>
-
 <script>
-import NavBar from '@/components/NavBar'
-
+import NavBar from './NavBar'
 export default {
-  components: {
-    NavBar
-  },
+  name: 'Pruebas',
+  components: {NavBar},
   data () {
     return {
       asignaturas: ['Lògica y Llenguatges', 'Factors Humans', 'Software Distribuït', 'Gràfics', 'Bases de Dades']
     }
-  },
-  methods: {}
+  }
 }
 
 </script>
+
+<style scoped>
+@import '../assets/styles.css';
+
+.margins-sidebar {
+  padding-top: 15px; padding-bottom: 15px;
+}
+.nav-sidebar:hover {
+  background-color: #accbee;
+}
+
+.row {
+  width: 100%; margin: 0
+}
+
+.custom-sidebar {
+  min-width: 350px; max-width: 350px;
+  background-color: #D3E0EA; height: 100%;
+  margin: 0; padding: 0; position:fixed;z-index:999;
+}
+@media (max-width: 992px) {
+  .custom-sidebar {
+    min-width: 100px; max-width: 100px;
+  }
+}
+
+.custom-no-sidebar {
+  margin-left: 350px;
+  margin-top: 30px
+}
+@media (max-width: 992px) {
+  .custom-no-sidebar {
+    margin-left: 100px;
+  }
+}
+
+.custom-titol {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.custom-margins-asignaturas {
+  padding-top: 35px;
+  padding-left: 55px;
+  padding-right: 60px;
+}
+@media (max-width: 978px) {
+  .custom-margins-asignaturas {
+    padding-top: 35px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+</style>
