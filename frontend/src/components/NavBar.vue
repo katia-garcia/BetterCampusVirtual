@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <b-navbar toggleable="lg" class="bluebg">
-      <b-navbar-brand href="#">
+      <b-navbar-brand href="/">
         <img src="https://www.iqtc.ub.edu/wp-content/themes/css-grid/img/logo_ub.png" width="130px"
              class="d-inline-block align-top" alt="ub-logo">
       </b-navbar-brand>
@@ -9,8 +9,7 @@
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
         <b-navbar-nav class="ml-auto">
-          <b-nav-item-dropdown size="lg" right variant="link" toggle-class="text-decoration-none" no-caret
-                               style="margin-left: 5px">
+          <b-nav-item-dropdown right>
             <template #button-content>
               <a style="color: #f4f8f8"> Nombre Apellido </a>
               <b-avatar size="40px"></b-avatar>

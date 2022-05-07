@@ -3,8 +3,8 @@
     <NavBar class="sticky-top"></NavBar>
     <div class="parent-container d-flex" style="height: calc(100vh - 72px);">
       <!-- sidebar-->
-      <div class="container custom-sidebar float-left shadow">
-        <div class="row align-items-center margins-sidebar nav-sidebar">
+      <div class="container custom-sidebar float-left shadow" >
+        <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/qualificacions'">
           <div class="col text-center">
             <b-icon-clipboard-check font-scale="1.8"></b-icon-clipboard-check>
           </div>
@@ -32,10 +32,9 @@
           <div class="col-10 d-none d-lg-block custom-text-title">Calendari
           </div>
         </div>
-        <div class="row align-items-center margins-sidebar">
+        <div class="row align-items-center margins-sidebar nav-sidebar">
           <div class="col">
-            <b-calendar class="d-none d-lg-block" block
-            ></b-calendar>
+            <b-calendar class="d-none d-lg-block" block></b-calendar>
           </div>
         </div>
       </div>
