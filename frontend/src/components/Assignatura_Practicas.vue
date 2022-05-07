@@ -3,11 +3,11 @@
     <NavBar></NavBar>
     <!-- sidebar-->
     <div class="container custom-sidebar float-left shadow">
-      <div class="row align-items-center margins-sidebar nav-sidebar" style="background-color: #accbee" onclick="location.href='#/assignatura'">
+      <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/assignatura'">
         <div class="col text-center">
           <b-icon-easel font-scale="1.8"></b-icon-easel>
         </div>
-        <div class="col-10 d-none d-lg-block custom-text-title"><b>Introducció</b>
+        <div class="col-10 d-none d-lg-block custom-text-title">Introducció
         </div>
       </div>
       <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/qualificacions'">
@@ -24,11 +24,11 @@
         <div class="col-10 d-none d-lg-block custom-text-title">Teoría
         </div>
       </div>
-      <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/assignatura/Practicas'">
+      <div class="row align-items-center margins-sidebar nav-sidebar"  style="background-color: #accbee" onclick="location.href='#/assignatura/Practicas'">
         <div class="col text-center">
           <b-icon-laptop font-scale="1.8"></b-icon-laptop>
         </div>
-        <div class="col-10 d-none d-lg-block custom-text-title">Pràctiques
+        <div class="col-10 d-none d-lg-block custom-text-title "><b>Pràctiques</b>
         </div>
       </div>
       <div class="row align-items-center margins-sidebar nav-sidebar">

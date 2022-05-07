@@ -45,7 +45,7 @@
             <!-- for asignaturas -->
             <div class="row">
               <div class="col-lg-4 col-md-6 mb-4" v-for="(asignatura) in asignaturas" :key="asignatura">
-                <div class="card custom-card-asignatura">
+                <div class="card custom-card-asignatura" onclick="location.href='#/assignatura'">
                   <div class="card-header" style="background-color: #d9d9d9">
                     <b-avatar></b-avatar>
                     <b-avatar></b-avatar>
