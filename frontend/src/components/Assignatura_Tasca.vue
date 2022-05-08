@@ -118,8 +118,11 @@
             </div>
             <div class="row align-items-center" style="margin-top: 20px">
               <div class="col text-center">
-                <b-button variant="primary"><b-icon-upload></b-icon-upload>
+                <b-button variant="primary" v-b-modal.modal-center><b-icon-upload></b-icon-upload>
                   &nbsp;&nbsp;Afegir Tramesa</b-button>
+                <b-modal id="modal-center" centered title="Entrega de la tasca">
+                  <p class="my-4">Arrosega aqui la tasca</p>
+                </b-modal>
               </div>
             </div>
           </div>
