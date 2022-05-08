@@ -5,6 +5,7 @@ import Qualificacions from '@/components/Qualificacions'
 import Assignatura from '@/components/Assignatura'
 import Teoria from '@/components/Assignatura_Teoria'
 import Practicas from '@/components/Assignatura_Practicas'
+import Tasca from '@/components/Assignatura_Tasca'
 
 Vue.use(Router)
 
@@ -34,6 +35,11 @@ export default new Router({
       path: '/assignatura/practicas',
       name: 'Practicas',
       component: Practicas
+    },
+    {
+      path: '/assignatura/practicas/tasca',
+      name: 'Tasca',
+      component: Tasca
     }
   ]
 })

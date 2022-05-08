@@ -1,13 +1,46 @@
 .bluebg {
   background-color: #1b86e8;
 }
+
 .bluesidebar {
   background-color: #d2e8f6;
 }
+
 .custom-text-title {
   font-family: "Segoe UI", sans-serif;
   font-size: 20px;
 }
+
 .custom-text-body {
   font-family: "Roboto", sans-serif;
+}
+
+.icons-assignatura {
+  font-size: 26px;
+  margin-left: 25px;
+  margin-right: 10px;
+}
+
+.text-assignatura {
+  font-size: 18px;
+}
+
+.seccio-assignatura {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.badge-secondary {
+  color:#fff;
+  background-color:#6c757d
+}
+a.badge-secondary:focus,
+a.badge-secondary:hover {
+  color:#fff;
+  background-color:#545b62
+}
+a.badge-secondary.focus,
+a.badge-secondary:focus {
+  outline:0;
+  box-shadow:0 0 0 .2rem rgba(108,117,125,.5)
 }
