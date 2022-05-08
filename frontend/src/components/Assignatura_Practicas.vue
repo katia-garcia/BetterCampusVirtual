@@ -181,7 +181,6 @@ export default {
 }
 
 .row {
-
   margin: 0;
 }
 

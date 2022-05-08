@@ -56,7 +56,7 @@
         </div>
       </div>
       <!-- END sidebar-->
-      <div class="container custom-no-sidebar" style="height: 100%">
+      <div class="container custom-no-sidebar" style="height: 100%;">
         <!-- barra titulo asignatura -->
         <div class="row align-items-center">
           <div class="col-1 text-center" style="font-size: 26px;">
@@ -68,13 +68,45 @@
         </div> <!-- END barra titulo asignatura -->
         <!-- barra navegacion -->
         <div class="row shadow-sm" style="margin-top: 15px; background-color: #f8f8f8;
-        margin-bottom: 20px; padding: 12px 5px 12px 5px;">
+        margin-bottom: 20px; padding: 12px 5px 15px 5px;">
           <div class="col">
             <a>Factors Humans</a>
             <b-icon-arrow-right></b-icon-arrow-right>
             <a>Introducció</a>
           </div>
         </div> <!-- END barra navegacion -->
+        <!-- -------------------------------------------CONTENIDO------------------------------------------------ -->
+        <div class="container-fluid" style="padding: 0; margin: 0">
+          <div class="row row-margins" style="margin-top: 30px; margin-bottom: 20px">
+            <div class="col" style="font-size: 18px">
+              Benvinguts a l'assignatura de "Factors Humans" de la Universitat de Barcelona (curs 2021-2022) </div>
+          </div>
+          <div class="row row-margins">
+            <div class="col">
+              <b-icon-file-earmark-pdf class="icons-assignatura"></b-icon-file-earmark-pdf>
+              <b-link class="text-assignatura">Presentació de l'Assignatura</b-link>
+            </div>
+          </div>
+          <div class="row row-margins">
+            <div class="col">
+              <b-icon-file-earmark-pdf class="icons-assignatura"></b-icon-file-earmark-pdf>
+              <b-link class="text-assignatura">Calendari de l'Assignatura</b-link>
+            </div>
+          </div>
+          <div class="row row-margins">
+            <div class="col">
+              <b-icon-link class="icons-assignatura"></b-icon-link>
+              <b-link class="text-assignatura">Pla Docent</b-link>
+            </div>
+          </div>
+          <div class="row row-margins">
+            <div class="col">
+              <b-icon-link class="icons-assignatura"></b-icon-link>
+              <b-link class="text-assignatura">Bibliografia</b-link>
+            </div>
+          </div>
+        </div>
+        <!-- ---------------------------------------END CONTENIDO------------------------------------------------ -->
       </div>
     </div>
   </div>
@@ -97,16 +129,6 @@ export default {
 <style scoped>
 @import '../assets/styles.css';
 
-.custom-card-asignatura {
-  max-width: 280px;
-  min-width: 170px;
-  max-height: 200px;
-  min-height: 200px;
-  padding: 0;
-  margin: 0;
-  border: none
-}
-
 .margins-sidebar {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -117,8 +139,13 @@ export default {
 }
 
 .row {
-  width: 100%;
-  margin: 0
+  margin: 0;
+}
+
+.row-margins {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 5px;
 }
 
 .custom-sidebar {
@@ -141,7 +168,7 @@ export default {
 
 .custom-no-sidebar {
   margin-left: 350px;
-  margin-top: 30px
+  margin-top: 20px
 }
 
 @media (max-width: 992px) {
