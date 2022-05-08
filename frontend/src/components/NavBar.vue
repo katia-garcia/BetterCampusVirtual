@@ -15,7 +15,7 @@
               <b-avatar size="40px"></b-avatar>
             </template>
             <b-dropdown-item>Perfil</b-dropdown-item>
-            <b-dropdown-item>Canviar a Professor</b-dropdown-item>
+            <b-dropdown-item @click="cambioVista">{{$buttonText.label}}</b-dropdown-item>
             <b-dropdown-item>Tancar Sessió</b-dropdown-item>
           </b-nav-item-dropdown>
         </b-navbar-nav>
@@ -27,3 +27,25 @@
 <style scoped>
 @import '../assets/styles.css';
 </style>
+<script>
+
+export default {
+  data () {
+    return {
+      buttonText: 'Canviar a Professor'
+    }
+  },
+  methods: {
+    cambioVista: function () {
+      console.log(this.$professorView.state)
+      if (this.$professorView.state) {
+        this.$buttonText.label = 'Canviar a Professor'
+        this.$professorView.state = false
+      } else {
+        this.$buttonText.label = 'Canviar a Alumne'
+        this.$professorView.state = true
+      }
+    }
+  }
+}
+</script>

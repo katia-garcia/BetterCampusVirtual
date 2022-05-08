@@ -44,7 +44,9 @@ html{
   border-color: #afd2ef;
   color: black;
   font-weight: bold;
- 
+  width: 100%;
+  margin: 0; 
+
 
 }
 
@@ -60,6 +62,9 @@ html{
   border-color: #e5f1fa;
   color: black;
   font-weight: bold;
+  width: 100%;
+  margin: 0; 
+
 }
 
 h1{
