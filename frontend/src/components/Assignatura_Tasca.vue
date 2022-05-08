@@ -75,9 +75,41 @@
             <b-icon-arrow-right></b-icon-arrow-right>
             <a>Pràctiques</a>
             <b-icon-arrow-right></b-icon-arrow-right>
-            <a>Pràctica 3</a>
+            <a>Entrega Pràctica 3</a>
           </div>
         </div> <!-- END barra navegacion -->
+        <!-- descripcion -->
+        <div class="row row-margins" style="margin-top: 30px">
+          <div class="col seccio-assignatura">Entrega Pràctica 3</div>
+        </div>
+        <div class="row row-margins" style="margin-top: 20px">
+          <div class="col">Entrega un zip amb el codi i la memòria amb el nom: P3_NomCognom</div>
+        </div>
+        <br>
+        <div class="row row-margins">
+          <div class="col">
+            <b-icon-clock></b-icon-clock>
+            Data límit: 9 de maig de 2022, 23:55
+          </div>
+        </div>
+        <div class="row row-margins">
+          <div class="col">
+            <b-icon-hourglass></b-icon-hourglass>
+            Temps restant: 3 dies 11 hores
+          </div>
+        </div>
+        <!-- END descripcion -->
+        <!-- entrega -->
+        <div class="row shadow-sm" style="margin-top: 15px; background-color: #f8f8f8;
+        margin-bottom: 20px; margin-left: 15px; padding: 20px 5px 20px 5px;
+        width: 60%; min-width: 300px">
+          <div class="col">
+            <div class="row"><div class="col">Estat de la Tramesa: Cap intent</div></div>
+            <div class="row"><div class="col">Estat de la Qualificació: Sense qualificació</div></div>
+            <div class="row"><div class="col"><b-button variant="primary"> Afegir Tramesa</b-button></div></div>
+          </div>
+        </div>
+        <!-- END entrega -->
       </div>
     </div>
   </div>
@@ -109,7 +141,7 @@ export default {
 
 .row {
   width: 100%;
-  margin: 0
+  margin: 0;
 }
 
 .custom-sidebar {

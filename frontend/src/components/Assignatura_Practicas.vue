@@ -69,7 +69,7 @@
         </div> <!-- END barra titulo asignatura -->
         <!-- barra navegacion -->
         <div class="row shadow-sm" style="margin-top: 15px; background-color: #f8f8f8;
-        margin-bottom: 20px; padding: 12px 5px 12px 5px;">
+        margin-bottom: 20px; padding: 12px 5px 15px 5px;">
           <div class="col">
             <a>Factors Humans</a>
             <b-icon-arrow-right></b-icon-arrow-right>
@@ -77,75 +77,77 @@
           </div>
         </div> <!-- END barra navegacion -->
         <!-- -------------------------------------------CONTENIDO------------------------------------------------ -->
-        <div class="row row-margins" style="margin-top: 30px">
-          <div class="col seccio-assignatura">> Pràctica 1</div>
+        <div class="container-fluid" style="padding: 0; margin: 0">
+          <div class="row row-margins" style="margin-top: 30px">
+            <div class="col seccio-assignatura">> Pràctica 1</div>
+          </div>
+          <!-- enunciat -->
+          <div class="row row-margins">
+            <div class="col">
+              <b-icon-file-earmark-pdf class="icons-assignatura"></b-icon-file-earmark-pdf>
+              <b-link class="text-assignatura">Enunciat Pràctica 1</b-link>
+            </div>
+          </div> <!-- END enunciat -->
+          <!-- tasca -->
+          <div class="row row-margins">
+            <div class="col">
+              <b-icon-upload class="icons-assignatura"></b-icon-upload>
+              <b-link class="text-assignatura">Entrega Pràctica 1</b-link>
+            </div>
+          </div> <!-- END tasca -->
+          <div class="row row-margins" style="margin-top: 30px">
+            <div class="col seccio-assignatura">> Pràctica 2</div>
+          </div>
+          <!-- enunciat -->
+          <div class="row row-margins">
+            <div class="col">
+              <b-icon-file-earmark-pdf class="icons-assignatura"></b-icon-file-earmark-pdf>
+              <b-link class="text-assignatura">Enunciat Pràctica 2</b-link>
+            </div>
+          </div> <!-- END enunciat -->
+          <!-- tasca -->
+          <div class="row row-margins">
+            <div class="col">
+              <b-icon-upload class="icons-assignatura"></b-icon-upload>
+              <b-link class="text-assignatura">Entrega Pràctica 2</b-link>
+            </div>
+          </div> <!-- END tasca -->
+          <div class="row row-margins" style="margin-top: 30px">
+            <div class="col seccio-assignatura">> Pràctica 3</div>
+          </div>
+          <!-- enunciat -->
+          <div class="row row-margins">
+            <div class="col">
+              <b-icon-file-earmark-pdf class="icons-assignatura"></b-icon-file-earmark-pdf>
+              <b-link class="text-assignatura">Enunciat Pràctica 3</b-link>
+            </div>
+          </div> <!-- END enunciat -->
+          <!-- tasca -->
+          <div class="row row-margins">
+            <div class="col">
+              <b-icon-upload class="icons-assignatura"></b-icon-upload>
+              <b-link href="#/assignatura/practicas/tasca" class="text-assignatura">Entrega Pràctica 3</b-link>
+            </div>
+          </div> <!-- END tasca -->
+          <div class="row row-margins" style="margin-top: 30px">
+            <div class="col seccio-assignatura">> Pràctica 4</div>
+          </div>
+          <!-- enunciat -->
+          <div class="row row-margins">
+            <div class="col">
+              <b-icon-file-earmark-pdf class="icons-assignatura"></b-icon-file-earmark-pdf>
+              <b-link class="text-assignatura">Enunciat Pràctica 4</b-link>
+            </div>
+          </div> <!-- END enunciat -->
+          <!-- tasca -->
+          <div class="row row-margins">
+            <div class="col">
+              <b-icon-upload class="icons-assignatura"></b-icon-upload>
+              <b-link class="text-assignatura">Entrega Pràctica 4</b-link>
+            </div>
+          </div> <!-- END tasca -->
+          <br><br><br><br>
         </div>
-        <!-- enunciat -->
-        <div class="row row-margins">
-          <div class="col">
-            <b-icon-file-earmark-pdf class="icons-assignatura"></b-icon-file-earmark-pdf>
-            <b-link class="text-assignatura">Enunciat Pràctica 1</b-link>
-          </div>
-        </div> <!-- END enunciat -->
-        <!-- tasca -->
-        <div class="row row-margins">
-          <div class="col">
-            <b-icon-upload class="icons-assignatura"></b-icon-upload>
-            <b-link class="text-assignatura">Entrega Pràctica 1</b-link>
-          </div>
-        </div> <!-- END tasca -->
-        <div class="row row-margins" style="margin-top: 30px">
-          <div class="col seccio-assignatura">> Pràctica 2</div>
-        </div>
-        <!-- enunciat -->
-        <div class="row row-margins">
-          <div class="col">
-            <b-icon-file-earmark-pdf class="icons-assignatura"></b-icon-file-earmark-pdf>
-            <b-link class="text-assignatura">Enunciat Pràctica 2</b-link>
-          </div>
-        </div> <!-- END enunciat -->
-        <!-- tasca -->
-        <div class="row row-margins">
-          <div class="col">
-            <b-icon-upload class="icons-assignatura"></b-icon-upload>
-            <b-link class="text-assignatura">Entrega Pràctica 2</b-link>
-          </div>
-        </div> <!-- END tasca -->
-        <div class="row row-margins" style="margin-top: 30px">
-          <div class="col seccio-assignatura">> Pràctica 3</div>
-        </div>
-        <!-- enunciat -->
-        <div class="row row-margins">
-          <div class="col">
-            <b-icon-file-earmark-pdf class="icons-assignatura"></b-icon-file-earmark-pdf>
-            <b-link class="text-assignatura">Enunciat Pràctica 3</b-link>
-          </div>
-        </div> <!-- END enunciat -->
-        <!-- tasca -->
-        <div class="row row-margins">
-          <div class="col">
-            <b-icon-upload class="icons-assignatura"></b-icon-upload>
-            <b-link href="#/assignatura/practicas/tasca" class="text-assignatura">Entrega Pràctica 3</b-link>
-          </div>
-        </div> <!-- END tasca -->
-        <div class="row row-margins" style="margin-top: 30px">
-          <div class="col seccio-assignatura">> Pràctica 4</div>
-        </div>
-        <!-- enunciat -->
-        <div class="row row-margins">
-          <div class="col">
-            <b-icon-file-earmark-pdf class="icons-assignatura"></b-icon-file-earmark-pdf>
-            <b-link class="text-assignatura">Enunciat Pràctica 4</b-link>
-          </div>
-        </div> <!-- END enunciat -->
-        <!-- tasca -->
-        <div class="row row-margins">
-          <div class="col">
-            <b-icon-upload class="icons-assignatura"></b-icon-upload>
-            <b-link class="text-assignatura">Entrega Pràctica 4</b-link>
-          </div>
-        </div> <!-- END tasca -->
-        <br><br><br><br>
         <!-- ---------------------------------------END CONTENIDO------------------------------------------------ -->
       </div>
     </div>
@@ -179,8 +181,8 @@ export default {
 }
 
 .row {
-  width: 100%;
-  margin: 0
+
+  margin: 0;
 }
 
 .row-margins {
