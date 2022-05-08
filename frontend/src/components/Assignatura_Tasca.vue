@@ -106,7 +106,12 @@
           <div class="col">
             <div class="row"><div class="col">Estat de la Tramesa: Cap intent</div></div>
             <div class="row"><div class="col">Estat de la Qualificació: Sense qualificació</div></div>
-            <div class="row"><div class="col"><b-button variant="primary"> Afegir Tramesa</b-button></div></div>
+            <div class="row"><div class="col">
+              <b-button v-b-modal.modal-center>Launch centered modal</b-button>
+              <b-modal id="modal-center" centered title="BootstrapVue">
+                <p class="my-4">Vertically centered modal!</p>
+              </b-modal>
+            </div></div>
           </div>
         </div>
         <!-- END entrega -->
