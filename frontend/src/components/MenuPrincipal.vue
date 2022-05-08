@@ -45,7 +45,7 @@
             <!-- for asignaturas -->
             <div class="row">
               <div class="col-lg-4 col-md-6 mb-4" v-for="(asignatura) in asignaturas" :key="asignatura">
-                <div class="card custom-card-asignatura" onclick="location.href='#/assignatura'">
+                <div class="card custom-card-asignatura"  onclick="location.href='#/assignatura'">
                   <div class="card-header" style="background-color: #d9d9d9">
                     <b-avatar></b-avatar>
                     <b-avatar></b-avatar>
@@ -96,7 +96,8 @@ export default {
   max-height: 200px;
   min-height: 200px;
   padding: 0;
-  margin: 0;
+  margin-top: 0;
+  margin-left:0;
   border: none
 }
 
@@ -145,15 +146,17 @@ export default {
 
 .custom-margins-asignaturas {
   padding-top: 35px;
-  padding-left: 55px;
-  padding-right: 60px;
+  padding-left: 35px;
+  padding-right: 35px;
+  margin-top: 20px;
 }
 
 @media (max-width: 978px) {
   .custom-margins-asignaturas {
     padding-top: 35px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
+    margin-top: 5px;
   }
 }
 
