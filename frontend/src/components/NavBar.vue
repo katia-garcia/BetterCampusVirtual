@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <b-navbar toggleable="lg" class="bluebg">
-      <b-navbar-brand href="/">
+      <b-navbar-brand href="#/">
         <img src="https://www.iqtc.ub.edu/wp-content/themes/css-grid/img/logo_ub.png" width="140px"
              class="d-inline-block align-top" alt="ub-logo" style="margin-left: 10px">
       </b-navbar-brand>

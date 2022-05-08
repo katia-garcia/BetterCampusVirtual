@@ -44,75 +44,82 @@
         <div class="row">
           <!-- assignatura -->
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card custom-card-asignatura">
-              <div class="card-header" style="background-color: #d9d9d9">
-                <b-avatar></b-avatar>
-                <b-avatar></b-avatar>
-                <b-avatar></b-avatar>
+            <div class="card custom-card-asignatura shadow">
+              <div class="card-header align-items-center text-center bgLogica"
+                   style="padding: 16px 0 16px 0">
+                <b-avatar size="36px" :src=i2></b-avatar>
+                <b-avatar size="36px" :src=i3></b-avatar>
+                <b-avatar size="36px" :src=i4></b-avatar>
               </div>
-              <div class="card-body border" style="border-radius: 0">
+              <div class="card-body border graybg" style="border-radius: 0">
                 <b-row><p class="custom-text-title custom-titol">Lògica y Llenguatges</p></b-row>
-                <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
+                <b-row><p class="custom-text-body">Qualificació:
+                  <b-badge style="font-size: 14px">6.50</b-badge></p></b-row>
               </div>
             </div>
           </div>
           <!-- END assignatura -->
           <!-- assignatura -->
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card custom-card-asignatura" onclick="location.href='#/assignatura'">
-              <div class="card-header" style="background-color: #d9d9d9">
-                <b-avatar></b-avatar>
-                <b-avatar></b-avatar>
-                <b-avatar></b-avatar>
+            <div class="card custom-card-asignatura shadow" onclick="location.href='#/assignatura'">
+              <div class="card-header align-items-center text-center bgFactors"
+                   style="padding: 16px 0 16px 0">
+                <b-avatar size="36px" :src=imageProfe></b-avatar>
+                <b-avatar size="36px" :src=i1></b-avatar>
               </div>
-              <div class="card-body border" style="border-radius: 0">
+              <div class="card-body border graybg" style="border-radius: 0">
                 <b-row><p class="custom-text-title custom-titol">Factors Humans</p></b-row>
-                <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
+                <b-row><p class="custom-text-body">Qualificació:
+                  <b-badge style="font-size: 14px">7.00</b-badge></p></b-row>
               </div>
             </div>
           </div>
           <!-- END assignatura -->
           <!-- assignatura -->
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card custom-card-asignatura">
-              <div class="card-header" style="background-color: #d9d9d9">
-                <b-avatar></b-avatar>
-                <b-avatar></b-avatar>
-                <b-avatar></b-avatar>
+            <div class="card custom-card-asignatura shadow">
+              <div class="card-header align-items-center text-center bgSD"
+                   style="padding: 16px 0 16px 0">
+                <b-avatar size="36px" :src=i6></b-avatar>
+                <b-avatar size="36px" :src=i7></b-avatar>
+                <b-avatar size="36px" :src=i8></b-avatar>
+                <b-avatar size="36px" :src=i9></b-avatar>
               </div>
-              <div class="card-body border" style="border-radius: 0">
+              <div class="card-body border graybg" style="border-radius: 0">
                 <b-row><p class="custom-text-title custom-titol">Software Distribuït</p></b-row>
-                <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
+                <b-row><p class="custom-text-body">Qualificació:
+                  <b-badge style="font-size: 14px">9.18</b-badge></p></b-row>
               </div>
             </div>
           </div>
           <!-- END assignatura -->
           <!-- assignatura -->
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card custom-card-asignatura">
-              <div class="card-header" style="background-color: #d9d9d9">
-                <b-avatar></b-avatar>
-                <b-avatar></b-avatar>
-                <b-avatar></b-avatar>
+            <div class="card custom-card-asignatura shadow">
+              <div class="card-header align-items-center text-center bgGrafics"
+                   style="padding: 16px 0 16px 0">
+                <b-avatar size="36px" :src=i5></b-avatar>
               </div>
-              <div class="card-body border" style="border-radius: 0">
+              <div class="card-body border graybg" style="border-radius: 0">
                 <b-row><p class="custom-text-title custom-titol">Gràfics</p></b-row>
-                <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
+                <b-row><p class="custom-text-body">Qualificació:
+                  <b-badge style="font-size: 14px">5.00</b-badge></p></b-row>
               </div>
             </div>
           </div>
           <!-- END assignatura -->
           <!-- assignatura -->
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card custom-card-asignatura">
-              <div class="card-header" style="background-color: #d9d9d9">
-                <b-avatar></b-avatar>
-                <b-avatar></b-avatar>
-                <b-avatar></b-avatar>
+            <div class="card custom-card-asignatura shadow">
+              <div class="card-header align-items-center text-center bgBD"
+                   style="padding: 16px 0 16px 0">
+                <b-avatar size="36px" :src=i11></b-avatar>
+                <b-avatar size="36px" :src=i12></b-avatar>
               </div>
-              <div class="card-body border" style="border-radius: 0">
+              <div class="card-body border graybg" style="border-radius: 0">
                 <b-row><p class="custom-text-title custom-titol">Bases de Dades</p></b-row>
-                <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
+                <b-row><p class="custom-text-body">Qualificació:
+                  <b-badge style="font-size: 14px">8.40</b-badge></p></b-row>
               </div>
             </div>
           </div>
@@ -125,13 +132,13 @@
         <div class="row">
           <!-- assignatura -->
           <div class="col-lg-4 col-md-6 mb-4">
-            <div class="card custom-card-asignatura" onclick="location.href='#/assignatura'">
-              <div class="card-header" style="background-color: #d9d9d9">
-                <b-avatar></b-avatar>
-                <b-avatar></b-avatar>
-                <b-avatar></b-avatar>
+            <div class="card custom-card-asignatura shadow" onclick="location.href='#/assignatura'">
+              <div class="card-header align-items-center text-center bgFactors"
+                   style="padding: 16px 0 16px 0">
+                <b-avatar size="36px" :src=imageProfe></b-avatar>
+                <b-avatar size="36px" :src=i1></b-avatar>
               </div>
-              <div class="card-body border" style="border-radius: 0">
+              <div class="card-body border graybg" style="border-radius: 0">
                 <b-row><p class="custom-text-title custom-titol">Factors Humans</p></b-row>
                 <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
               </div>
@@ -153,7 +160,20 @@ export default {
   components: {NavBar},
   data () {
     return {
-      asignaturas: ['Lògica y Llenguatges', 'Factors Humans', 'Software Distribuït', 'Gràfics', 'Bases de Dades']
+      asignaturas: ['Lògica y Llenguatges', 'Factors Humans', 'Software Distribuït', 'Gràfics', 'Bases de Dades'],
+      imageProfe: 'https://i.pinimg.com/564x/df/70/cf/df70cf8511ef8c1185986889218eba1d.jpg',
+      i1: 'http://t1.gstatic.com/licensed-image?q=tbn:ANd9GcQKdXf_BJwU2GgF6K4Qh-KLaxZgHahr73UIFktqgcXcVFyV-HMCNzOdpuzsmLFV',
+      i2: 'http://t2.gstatic.com/licensed-image?q=tbn:ANd9GcQwQFnyO5Lnnbm3ggQ0XHhck1mvX7dkC2Eb_2j4fxdJz2K3vEoVnnCxoSzERtp3',
+      i3: 'http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcRpbXJfEGOShwid_hfw7LGM3Zz0EkEQB_-FM2LvPt7xAXXeOA765FGE-JK-VIti',
+      i4: 'https://cineuropa.org/imgCache/2015/12/15/1450182178179_0800x0800_0x0x0x0_1573440057403.jpg',
+      i5: 'https://upload.wikimedia.org/wikipedia/commons/e/ef/Emily_Browning_%28Cropped%29.jpg',
+      i6: 'https://www.alohacriticon.com/wp-content/uploads/2012/08/james-caan.jpg',
+      i7: 'https://images.mubicdn.net/images/cast_member/59162/cache-3074-1600882392/image-w856.jpg?size=800x',
+      i8: 'https://img.a.transfermarkt.technology/portrait/big/125781-1643320574.jpg?lm=1',
+      i9: 'https://img.a.transfermarkt.technology/portrait/big/28003-1631171950.jpg?lm=1',
+      i10: 'https://mx.web.img3.acsta.net/c_310_420/medias/nmedia/18/35/30/03/19956155.jpg',
+      i11: 'https://i.insider.com/5dadc2ae045a3137b6062517?width=811&format=jpeg',
+      i12: 'https://upload.wikimedia.org/wikipedia/commons/e/e6/Pedro_Sánchez_in_2020.jpg'
     }
   },
   methods: {}
@@ -162,6 +182,7 @@ export default {
 
 <style scoped>
 @import '../assets/styles.css';
+@import '../assets/backgrounds.css';
 
 .custom-titol {
   font-size: 20px;
@@ -174,7 +195,8 @@ export default {
   max-height: 200px;
   min-height: 200px;
   padding: 0;
-  margin-top: 0;
+  margin-top: 10px;
+  margin-bottom: 15px;
   margin-left: 0;
   border: none
 }

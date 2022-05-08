@@ -6,6 +6,10 @@
   background-color: #d2e8f6;
 }
 
+.graybg {
+  background-color: #f8f8f8;
+}
+
 .custom-text-title {
   font-family: "Segoe UI", sans-serif;
   font-size: 20px;

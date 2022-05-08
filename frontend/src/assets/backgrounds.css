@@ -1,0 +1,24 @@
+.bgFactors {
+  background-image: url("https://i.pinimg.com/originals/e7/64/c0/e764c015ed13c7a23a600c0750e8f566.jpg");
+  background-size: cover;
+}
+
+.bgLogica {
+  background-image: url("https://i.pinimg.com/564x/d9/e8/25/d9e825818e2947fceb183f510fb1058c.jpg");
+  background-size: cover;
+}
+
+.bgSD {
+  background-image: url("https://i.pinimg.com/564x/70/cf/5d/70cf5d0092febfd9453616ce130c9d84.jpg");
+  background-size: cover;
+}
+
+.bgGrafics {
+  background-image: url("https://i.pinimg.com/564x/2c/88/47/2c8847f8d111b7195161fa24b6ed5ae2.jpg");
+  background-size: cover;
+}
+
+.bgBD {
+  background-image: url("https://i.pinimg.com/564x/d4/ec/1f/d4ec1f34eb8f0a06e47c254113e169e4.jpg");
+  background-size: cover;
+}
