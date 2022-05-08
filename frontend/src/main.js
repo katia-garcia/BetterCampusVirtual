@@ -9,6 +9,14 @@ Vue.use(BootstrapVue)
 Vue.use(IconsPlugin)
 Vue.config.productionTip = false
 
+Vue.prototype.$professorView = Vue.observable({
+  state: false
+})
+
+Vue.prototype.$buttonText = Vue.observable({
+  label: 'Canviar a Professor'
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
