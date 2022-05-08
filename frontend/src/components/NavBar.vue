@@ -8,7 +8,7 @@
       <b-navbar-toggle target="nav-collapse"></b-navbar-toggle>
       <b-collapse id="nav-collapse" is-nav>
         <!-- Right aligned nav items -->
-        <b-navbar-nav class="ml-auto">
+        <b-navbar-nav class="ml-auto" rigth>
           <b-nav-item-dropdown right>
             <template #button-content>
               <a style="color: #f4f8f8"> Nombre Apellido </a>
