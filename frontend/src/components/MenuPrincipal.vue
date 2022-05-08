@@ -3,7 +3,7 @@
     <NavBar class="sticky-top"></NavBar>
     <div class="parent-container d-flex" style="height: calc(100vh - 72px);">
       <!-- sidebar-->
-      <div class="container custom-sidebar float-left shadow" >
+      <div class="container custom-sidebar float-left shadow">
         <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/qualificacions'">
           <div class="col text-center">
             <b-icon-clipboard-check font-scale="1.8"></b-icon-clipboard-check>
@@ -39,28 +39,108 @@
         </div>
       </div>
       <!-- END sidebar-->
-      <div class="container custom-no-sidebar" style="height: 100%">
+      <!-------------------------------- ASSIGNATURES ALUMNE ------------------------------------------->
+      <div class="container custom-no-sidebar" style="height: 100%" v-if="$professorView.state === false">
         <div class="row">
-          <div class="col">
-            <!-- for asignaturas -->
-            <div class="row">
-              <div class="col-lg-4 col-md-6 mb-4" v-for="(asignatura) in asignaturas" :key="asignatura">
-                <div class="card custom-card-asignatura"  onclick="location.href='#/assignatura'">
-                  <div class="card-header" style="background-color: #d9d9d9">
-                    <b-avatar></b-avatar>
-                    <b-avatar></b-avatar>
-                    <b-avatar></b-avatar>
-                  </div>
-                  <div class="card-body border" style="border-radius: 0">
-                    <b-row><p class="custom-text-title custom-titol">{{ asignatura }}</p></b-row>
-                    <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
-                  </div>
-                </div>
+          <!-- assignatura -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card custom-card-asignatura">
+              <div class="card-header" style="background-color: #d9d9d9">
+                <b-avatar></b-avatar>
+                <b-avatar></b-avatar>
+                <b-avatar></b-avatar>
               </div>
-            </div> <!-- END for asignaturas -->
+              <div class="card-body border" style="border-radius: 0">
+                <b-row><p class="custom-text-title custom-titol">Lògica y Llenguatges</p></b-row>
+                <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
+              </div>
+            </div>
           </div>
+          <!-- END assignatura -->
+          <!-- assignatura -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card custom-card-asignatura" onclick="location.href='#/assignatura'">
+              <div class="card-header" style="background-color: #d9d9d9">
+                <b-avatar></b-avatar>
+                <b-avatar></b-avatar>
+                <b-avatar></b-avatar>
+              </div>
+              <div class="card-body border" style="border-radius: 0">
+                <b-row><p class="custom-text-title custom-titol">Factors Humans</p></b-row>
+                <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
+              </div>
+            </div>
+          </div>
+          <!-- END assignatura -->
+          <!-- assignatura -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card custom-card-asignatura">
+              <div class="card-header" style="background-color: #d9d9d9">
+                <b-avatar></b-avatar>
+                <b-avatar></b-avatar>
+                <b-avatar></b-avatar>
+              </div>
+              <div class="card-body border" style="border-radius: 0">
+                <b-row><p class="custom-text-title custom-titol">Software Distribuït</p></b-row>
+                <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
+              </div>
+            </div>
+          </div>
+          <!-- END assignatura -->
+          <!-- assignatura -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card custom-card-asignatura">
+              <div class="card-header" style="background-color: #d9d9d9">
+                <b-avatar></b-avatar>
+                <b-avatar></b-avatar>
+                <b-avatar></b-avatar>
+              </div>
+              <div class="card-body border" style="border-radius: 0">
+                <b-row><p class="custom-text-title custom-titol">Gràfics</p></b-row>
+                <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
+              </div>
+            </div>
+          </div>
+          <!-- END assignatura -->
+          <!-- assignatura -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card custom-card-asignatura">
+              <div class="card-header" style="background-color: #d9d9d9">
+                <b-avatar></b-avatar>
+                <b-avatar></b-avatar>
+                <b-avatar></b-avatar>
+              </div>
+              <div class="card-body border" style="border-radius: 0">
+                <b-row><p class="custom-text-title custom-titol">Bases de Dades</p></b-row>
+                <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
+              </div>
+            </div>
+          </div>
+          <!-- END assignatura -->
         </div>
       </div>
+      <!-------------------------------- ASSIGNATURES ALUMNE ------------------------------------------->
+      <!-------------------------------- ASSIGNATURES PROFESSOR  --------------------------------------->
+      <div class="container custom-no-sidebar" style="height: 100%" v-if="$professorView.state === true">
+        <div class="row">
+          <!-- assignatura -->
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card custom-card-asignatura" onclick="location.href='#/assignatura'">
+              <div class="card-header" style="background-color: #d9d9d9">
+                <b-avatar></b-avatar>
+                <b-avatar></b-avatar>
+                <b-avatar></b-avatar>
+              </div>
+              <div class="card-body border" style="border-radius: 0">
+                <b-row><p class="custom-text-title custom-titol">Factors Humans</p></b-row>
+                <b-row><p class="custom-text-body">Qualificació: 7.00</p></b-row>
+              </div>
+            </div>
+          </div>
+          <!-- END assignatura -->
+        </div>
+      </div>
+      <!-------------------------------- ASSIGNATURES PROFESSOR ---------------------------------------->
     </div>
   </div>
 </template>
@@ -76,10 +156,8 @@ export default {
       asignaturas: ['Lògica y Llenguatges', 'Factors Humans', 'Software Distribuït', 'Gràfics', 'Bases de Dades']
     }
   },
-  methods: {
-  }
+  methods: {}
 }
-
 </script>
 
 <style scoped>
@@ -97,7 +175,7 @@ export default {
   min-height: 200px;
   padding: 0;
   margin-top: 0;
-  margin-left:0;
+  margin-left: 0;
   border: none
 }
 
