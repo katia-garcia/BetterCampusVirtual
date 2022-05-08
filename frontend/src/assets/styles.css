@@ -1,13 +1,26 @@
 .bluebg {
   background-color: #1b86e8;
 }
+
 .bluesidebar {
   background-color: #d2e8f6;
 }
+
 .custom-text-title {
   font-family: "Segoe UI", sans-serif;
   font-size: 20px;
 }
+
 .custom-text-body {
   font-family: "Roboto", sans-serif;
+}
+
+.icons-assignatura {
+  font-size: 28px;
+  margin-left: 25px;
+  margin-right: 10px;
+}
+
+.text-assignatura {
+  font-size: 20px;
 }

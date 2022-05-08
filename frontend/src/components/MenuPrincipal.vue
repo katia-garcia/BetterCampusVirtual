@@ -32,7 +32,7 @@
           <div class="col-10 d-none d-lg-block custom-text-title">Calendari
           </div>
         </div>
-        <div class="row align-items-center margins-sidebar nav-sidebar">
+        <div class="row align-items-center margins-sidebar">
           <div class="col">
             <b-calendar class="d-none d-lg-block" block></b-calendar>
           </div>

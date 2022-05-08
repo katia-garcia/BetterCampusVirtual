@@ -17,14 +17,15 @@
         <div class="col-10 d-none d-lg-block custom-text-title">Qualificacions
         </div>
       </div>
-      <div class="row align-items-center margins-sidebar nav-sidebar" style="background-color: #accbee" onclick="location.href='#/assignatura/Teoria'">
+      <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/assignatura/teoria'"
+           style="background-color: #accbee">
         <div class="col text-center">
           <b-icon-book font-scale="1.8"></b-icon-book>
         </div>
-        <div class="col-10 d-none d-lg-block custom-text-title"><b>Teoría</b>
+        <div class="col-10 d-none d-lg-block custom-text-title"><b>Teoria</b>
         </div>
       </div>
-      <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/assignatura/Practicas'">
+      <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/assignatura/practicas'">
         <div class="col text-center">
           <b-icon-laptop font-scale="1.8"></b-icon-laptop>
         </div>
@@ -60,16 +61,6 @@ export default {
 <style scoped>
 @import '../assets/styles.css';
 
-.custom-card-asignatura {
-  max-width: 280px;
-  min-width: 170px;
-  max-height: 200px;
-  min-height: 200px;
-  padding: 0;
-  margin: 0;
-  border: none
-}
-
 .margins-sidebar {
   padding-top: 15px; padding-bottom: 15px;
 }
@@ -89,16 +80,6 @@ export default {
 @media (max-width: 992px) {
   .custom-sidebar {
     min-width: 100px; max-width: 100px;
-  }
-}
-
-.custom-no-sidebar {
-  margin-left: 350px;
-  margin-top: 30px
-}
-@media (max-width: 992px) {
-  .custom-no-sidebar {
-    margin-left: 100px;
   }
 }
 </style>

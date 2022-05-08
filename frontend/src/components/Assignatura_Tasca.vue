@@ -4,12 +4,11 @@
     <div class="parent-container d-flex" style="height: calc(100vh - 72px);">
       <!-- sidebar-->
       <div class="container custom-sidebar float-left shadow">
-        <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/assignatura'"
-             style="background-color: #accbee">
+        <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/assignatura'">
           <div class="col text-center">
             <b-icon-easel font-scale="1.8"></b-icon-easel>
           </div>
-          <div class="col-10 d-none d-lg-block custom-text-title"><b>Introducció</b>
+          <div class="col-10 d-none d-lg-block custom-text-title">Introducció
           </div>
         </div>
         <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/qualificacions'">
@@ -26,11 +25,13 @@
           <div class="col-10 d-none d-lg-block custom-text-title">Teoria
           </div>
         </div>
-        <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/assignatura/practicas'">
+        <div class="row align-items-center margins-sidebar nav-sidebar"
+             onclick="location.href='#/assignatura/practicas'"
+             style="background-color: #accbee">
           <div class="col text-center">
             <b-icon-laptop font-scale="1.8"></b-icon-laptop>
           </div>
-          <div class="col-10 d-none d-lg-block custom-text-title">Pràctiques
+          <div class="col-10 d-none d-lg-block custom-text-title "><b>Pràctiques</b>
           </div>
         </div>
         <div class="row align-items-center margins-sidebar nav-sidebar">
@@ -44,18 +45,23 @@
       <!-- END sidebar-->
       <div class="container custom-no-sidebar" style="height: 100%">
         <!-- barra titulo asignatura -->
-        <div class="row">
-          <div class="col">
-            <b-icon-arrow-left-square-fill></b-icon-arrow-left-square-fill>
-            <a>Factors Humans</a>
+        <div class="row align-items-center">
+          <div class="col-1 text-center" style="font-size: 26px;">
+            <b-icon-caret-left-fill></b-icon-caret-left-fill>
+          </div>
+          <div class="col custom-text-title" style="font-size: 30px">
+            Factors Humans
           </div>
         </div> <!-- END barra titulo asignatura -->
         <!-- barra navegacion -->
-        <div class="row shadow-sm">
+        <div class="row shadow-sm" style="margin-top: 15px; background-color: #f8f8f8;
+        margin-bottom: 20px; padding: 12px 5px 12px 5px;">
           <div class="col">
-            <a>Introducció</a>
+            <a>Factors Humans</a>
             <b-icon-arrow-right></b-icon-arrow-right>
-            <a>Pla Docent</a>
+            <a>Pràctiques</a>
+            <b-icon-arrow-right></b-icon-arrow-right>
+            <a>Pràctica 3</a>
           </div>
         </div> <!-- END barra navegacion -->
       </div>
@@ -67,28 +73,16 @@
 import NavBar from './NavBar'
 
 export default {
-  name: 'Assignatura',
+  name: 'Assignatura_Tasca.vue',
   components: {NavBar},
   data () {
-    return {
-      temas: ['blabla', 'alsdcas']
-    }
+    return {}
   }
 }
 </script>
 
 <style scoped>
 @import '../assets/styles.css';
-
-.custom-card-asignatura {
-  max-width: 280px;
-  min-width: 170px;
-  max-height: 200px;
-  min-height: 200px;
-  padding: 0;
-  margin: 0;
-  border: none
-}
 
 .margins-sidebar {
   padding-top: 15px;
@@ -124,7 +118,7 @@ export default {
 
 .custom-no-sidebar {
   margin-left: 350px;
-  margin-top: 30px
+  margin-top: 20px
 }
 
 @media (max-width: 992px) {
