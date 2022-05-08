@@ -18,7 +18,7 @@
           <div class="col-10 d-none d-lg-block custom-text-title">Qualificacions
           </div>
         </div>
-        <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/assignatura/teoria'">
+        <div class="row align-items-center margins-sidebar nav-sidebar">
           <div class="col text-center">
             <b-icon-book font-scale="1.8"></b-icon-book>
           </div>
