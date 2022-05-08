@@ -11,7 +11,7 @@
         <b-navbar-nav class="ms-auto" style="margin-right: 10px">
           <b-nav-item-dropdown right>
             <template #button-content>
-              <a style="color: #f4f8f8"> Nombre Apellido </a>
+              <a style="color: #f4f8f8"> Nom Cognom </a>
               <b-avatar size="40px"></b-avatar>
             </template>
             <b-dropdown-item>Perfil</b-dropdown-item>
