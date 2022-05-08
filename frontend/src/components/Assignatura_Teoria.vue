@@ -20,7 +20,7 @@
       <div class="row align-items-center margins-sidebar nav-sidebar" onclick="location.href='#/assignatura/teoria'"
            style="background-color: #accbee">
         <div class="col text-center">
-          <b-icon-book font-scale="1.8"></b-icon-book>
+          <b-icon-book-fill font-scale="1.8"></b-icon-book-fill>
         </div>
         <div class="col-10 d-none d-lg-block custom-text-title"><b>Teoria</b>
         </div>
@@ -30,6 +30,20 @@
           <b-icon-laptop font-scale="1.8"></b-icon-laptop>
         </div>
         <div class="col-10 d-none d-lg-block custom-text-title">Pràctiques
+        </div>
+      </div>
+      <div class="row align-items-center margins-sidebar nav-sidebar">
+        <div class="col text-center">
+          <b-icon-megaphone font-scale="1.8"></b-icon-megaphone>
+        </div>
+        <div class="col-10 d-none d-lg-block custom-text-title ">Fòrum Avisos
+        </div>
+      </div>
+      <div class="row align-items-center margins-sidebar nav-sidebar">
+        <div class="col text-center">
+          <b-icon-question-circle font-scale="1.8"></b-icon-question-circle>
+        </div>
+        <div class="col-10 d-none d-lg-block custom-text-title ">Fòrum Dubtes
         </div>
       </div>
       <div class="row align-items-center margins-sidebar nav-sidebar">

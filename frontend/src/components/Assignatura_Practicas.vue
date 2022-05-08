@@ -29,9 +29,23 @@
              onclick="location.href='#/assignatura/practicas'"
              style="background-color: #accbee">
           <div class="col text-center">
-            <b-icon-laptop font-scale="1.8"></b-icon-laptop>
+            <b-icon-laptop-fill font-scale="1.8"></b-icon-laptop-fill>
           </div>
           <div class="col-10 d-none d-lg-block custom-text-title "><b>Pràctiques</b>
+          </div>
+        </div>
+        <div class="row align-items-center margins-sidebar nav-sidebar">
+          <div class="col text-center">
+            <b-icon-megaphone font-scale="1.8"></b-icon-megaphone>
+          </div>
+          <div class="col-10 d-none d-lg-block custom-text-title ">Fòrum Avisos
+          </div>
+        </div>
+        <div class="row align-items-center margins-sidebar nav-sidebar">
+          <div class="col text-center">
+            <b-icon-question-circle font-scale="1.8"></b-icon-question-circle>
+          </div>
+          <div class="col-10 d-none d-lg-block custom-text-title ">Fòrum Dubtes
           </div>
         </div>
         <div class="row align-items-center margins-sidebar nav-sidebar">
@@ -64,7 +78,7 @@
         </div> <!-- END barra navegacion -->
         <!-- -------------------------------------------CONTENIDO------------------------------------------------ -->
         <div class="row row-margins" style="margin-top: 30px">
-          <div class="col text-assignatura">> Pràctica 1</div>
+          <div class="col seccio-assignatura">> Pràctica 1</div>
         </div>
         <!-- enunciat -->
         <div class="row row-margins">
@@ -81,7 +95,7 @@
           </div>
         </div> <!-- END tasca -->
         <div class="row row-margins" style="margin-top: 30px">
-          <div class="col text-assignatura">> Pràctica 2</div>
+          <div class="col seccio-assignatura">> Pràctica 2</div>
         </div>
         <!-- enunciat -->
         <div class="row row-margins">
@@ -98,7 +112,7 @@
           </div>
         </div> <!-- END tasca -->
         <div class="row row-margins" style="margin-top: 30px">
-          <div class="col text-assignatura">> Pràctica 3</div>
+          <div class="col seccio-assignatura">> Pràctica 3</div>
         </div>
         <!-- enunciat -->
         <div class="row row-margins">
@@ -115,7 +129,7 @@
           </div>
         </div> <!-- END tasca -->
         <div class="row row-margins" style="margin-top: 30px">
-          <div class="col text-assignatura">> Pràctica 4</div>
+          <div class="col seccio-assignatura">> Pràctica 4</div>
         </div>
         <!-- enunciat -->
         <div class="row row-margins">
