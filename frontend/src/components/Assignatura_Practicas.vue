@@ -59,7 +59,7 @@
       <!-- END sidebar-->
       <div class="container custom-no-sidebar" style="height: 100%;">
         <!-- barra titulo asignatura -->
-        <div class="row align-items-center">
+        <div class="row align-items-center" onclick="location.href='#/'">
           <div class="col-1 text-center" style="font-size: 26px;">
             <b-icon-caret-left-fill></b-icon-caret-left-fill>
           </div>
@@ -71,9 +71,9 @@
         <div class="row shadow-sm" style="margin-top: 15px; background-color: #f8f8f8;
         margin-bottom: 20px; padding: 12px 5px 15px 5px;">
           <div class="col">
-            <a>Factors Humans</a>
+            <a href="#/assignatura">Factors Humans</a>
             <b-icon-arrow-right></b-icon-arrow-right>
-            <a>Pràctiques</a>
+            <a href="#/assignatura/practicas">Pràctiques</a>
           </div>
         </div> <!-- END barra navegacion -->
         <!-- -------------------------------------------CONTENIDO------------------------------------------------ -->
