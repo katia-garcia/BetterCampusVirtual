@@ -39,7 +39,7 @@ html{
   font-size: 20px;
   justify-content: flex-start;
   align-items: center;
-  padding-left: 30px;
+  padding: 30px;
   border-radius:0px; 
   border-color: #afd2ef;
   color: black;
@@ -47,9 +47,15 @@ html{
   width: 100%;
   margin: 0; 
 
-
+}
+.accordion-task-button .task-name{
+  flex-grow: 10;
 }
 
+.accordion-task-button .task-comment{
+  flex-grow: 0.5;
+  font-size: 1rem;  
+}
 .accordion-alumno-button{
   display: flex;
   height: 3em; 
@@ -64,7 +70,6 @@ html{
   font-weight: bold;
   width: 100%;
   margin: 0; 
-
 }
 
 h1{
