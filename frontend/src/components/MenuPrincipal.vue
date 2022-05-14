@@ -221,37 +221,32 @@ export default {
   background-color: #D3E0EA;
   height: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 0 0 2px;
   position: fixed;
   z-index: 999;
 }
 
-@media (max-width: 992px) {
-  .custom-sidebar {
-    min-width: 100px;
-    max-width: 100px;
-  }
-}
-
 .custom-no-sidebar {
   margin-left: 350px;
+  padding-left: 30px;
   margin-top: 30px
-}
-
-@media (max-width: 992px) {
-  .custom-no-sidebar {
-    margin-left: 100px;
-  }
 }
 
 .custom-margins-asignaturas {
   padding-top: 35px;
   padding-left: 35px;
   padding-right: 35px;
-  margin-top: 20px;
+  margin-top: 30px;
 }
 
 @media (max-width: 978px) {
+  .custom-sidebar {
+    min-width: 100px;
+    max-width: 100px;
+  }
+  .custom-no-sidebar {
+    margin-left: 100px;
+  }
   .custom-margins-asignaturas {
     padding-top: 35px;
     padding-left: 35px;
