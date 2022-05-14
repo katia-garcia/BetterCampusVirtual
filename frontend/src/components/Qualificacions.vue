@@ -6,56 +6,68 @@
     </div>
     <!-- Flex horizontal Layout -->
 
-    <div class="accordion-wrapper">
-      <!--Assignatura accordion-->
-      <div class="accordion" role="tablist" v-for="(assignatura, key) in assignatures" :key="key">
+    <div class="accordion-wrapper" v-if="$professorView.state === true">
+      <!--AssignaturaProfessor accordion-->
+      <div class="accordion" role="tablist" v-for="(assignatura, key) in assignaturesP" :key="key">
         <b-card no-body class="mb-1">
           <b-card-header header-tag="header" class="p-1" role="tab">
             <b-button block v-b-toggle="key" class="accordion-button" variant="primary">{{assignatura}}</b-button>
           </b-card-header>
           <b-collapse :id="key" accordion="accordion" role="tabpanel">
             <b-card-body>
-              <!--Task accordion-->
+              <!--TaskProfessor accordion-->
               <div  class="accordion-task" role="tablist" v-for="(tasca, key) in tasques" :key="key">
                 <b-card no-body class="mb-1">
                   <b-card-header header-tag="header" class="p-1" role="tab">
-                    <b-button block v-b-toggle="key" class="accordion-task-button" variant="primary">{{tasca}}</b-button>
+                    <div v-if="assignatura === 'Factors Humans' && tasca.nombre === 'Tasca 3'" block v-b-toggle="key" class="accordion-task-button" onclick="location.href='#/assignatura/practicas/tasca'" tag="button"> {{tasca.nombre}}</div>
+                    <div v-else block v-b-toggle="key" class="accordion-task-button" tag="button"> {{tasca.nombre}}</div>
                   </b-card-header>
-                  <b-collapse :id="key" accordion="accordion-task" role="tabpanel">
-                    <!--Alumno accordion-->
-                    <b-card-body v-if="$professorView.state === true">
-                      <div class="accordion-alumno" role="tablist" v-for="(alumno, key) in alumnesP" :key="key">
-                      <b-card no-body class="mb-1">
-                        <b-card-header header-tag="header" class="p-1" role="tab">
-                          <b-button block v-b-toggle="key" class="accordion-alumno-button" variant="primary">{{alumno}}</b-button>
-                        </b-card-header>
-                        <b-collapse :id="key" accordion="accordion-alumno" role="tabpanel">
-                        </b-collapse>
-                      </b-card>
-                    </div>
-                    </b-card-body>
-                      <b-card-body v-else>
-                        <div class="accordion-alumno" role="tablist" v-for="(alumno, key) in alumnesA" :key="key">
-                          <b-card no-body class="mb-1">
-                            <b-card-header header-tag="header" class="p-1" role="tab">
-                              <b-button block v-b-toggle="key" class="accordion-alumno-button" variant="primary">{{alumno}}</b-button>
-                            </b-card-header>
-                            <b-collapse :id="key" accordion="accordion-alumno" role="tabpanel">
-                            </b-collapse>
-                          </b-card>
-                        </div>
-                    </b-card-body>
-                    <!--End Alumno accordion-->
-                  </b-collapse>
                 </b-card>
               </div>
-              <!--End Task accordion-->
+              <!--End TaskProfessor accordion-->
             </b-card-body>
           </b-collapse>
         </b-card>
       </div>
-        <!--End Assignatura accordion-->
+        <!--End AssignaturaProfessor accordion-->
     </div>
+
+    <!--Alumno accordion-->
+    <div class="accordion-wrapper" v-else>
+      <!--AssignaturaAlumno accordion-->
+      <div class="accordion" role="tablist" v-for="(assignatura, key) in assignaturesA" :key="key">
+        <b-card no-body class="mb-1">
+          <b-card-header header-tag="header" class="p-1" role="tab">
+            <b-button block v-b-toggle="key" class="accordion-button" variant="primary">{{assignatura}}</b-button>
+          </b-card-header>
+          <b-collapse :id="key" accordion="accordion" role="tabpanel">
+            <b-card-body>
+              <!--TaskAlumno accordion-->
+              <div  class="accordion-task" role="tablist" v-for="(tasca, key) in tasques" :key="key">
+                <b-card no-body class="mb-1">
+                  <b-card-header header-tag="header" class="p-1" role="tab">
+                    <div v-if="assignatura === 'Factors Humans' && tasca.nombre === 'Tasca 3'" block v-b-toggle="key" class="accordion-task-button" onclick="location.href='#/assignatura/practicas/tasca'" tag="button">
+                      <div class="task-name">{{tasca.nombre}}</div>
+                      <div class="task-comment">{{tasca.comentario}}</div>
+                      <div class="task-mark">{{tasca.puntuacion}}</div>
+                    </div>
+                    <div v-else block v-b-toggle="key" class="accordion-task-button" tag="button">
+                      <div class="task-name">{{tasca.nombre}}</div>
+                      <div class="task-comment">{{tasca.comentario}}</div>
+                      <div class="task-mark">{{tasca.puntuacion}}</div>
+                    </div>
+                  </b-card-header>
+                </b-card>
+              </div>
+              <!--End TaskAlumno accordion-->
+            </b-card-body>
+          </b-collapse>
+        </b-card>
+      </div>
+        <!--End AssignaturaAlumno accordion-->
+    </div>
+    <!--End Alumno accordion-->
+
   </div>
 </template>
 
@@ -72,21 +84,14 @@ export default {
   },
   data () {
     return {
-      text: `
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
-        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
-        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon
-        tempor, sunt aliqua put a bird on it squid single-origin coffee nulla
-        assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore
-        wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher
-        vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic
-        synth nesciunt you probably haven't heard of them accusamus labore VHS.
-      `,
-      assignatures: {'accordion-1': 'Lógica i Llenguatges', 'accordion-2': 'Software Distribuït', 'accordion-3': 'Factors Humans', 'accordion-4': 'Bases de Dades', 'accordion-5': 'Gràfics'},
-      tasques: {'accordion-6': 'Tasca 1', 'accordion-7': 'Tasca 2', 'accordion-8': 'Tasca 3', 'accordion-9': 'Tasca 4', 'accordion-10': 'Tasca 5'},
-      alumnesP: {'accordion-11': 'Martí Perez', 'accordion-12': 'Sergi Fernández', 'accordion-13': 'Katia Garcia', 'accordion-14': 'Laia Vives', 'accordion-15': 'Richard Bobo'},
-      alumnesA: {'accordion-11': 'Sergi Fernandez'}
-
+      assignaturesA: {'accordion-1': 'Lógica i Llenguatges', 'accordion-2': 'Software Distribuït', 'accordion-3': 'Factors Humans', 'accordion-4': 'Bases de Dades', 'accordion-5': 'Gràfics'},
+      assignaturesP: {'accordion-6': 'Factors Humans', 'accordion-7': 'Programació 2'},
+      tasques: {'accordion-8': {'nombre': 'Tasca 1', 'puntuacion': 5, 'comentario': 'Lorem ipsum dolor sit amet consectetur...'},
+        'accordion-9': {'nombre': 'Tasca 2', 'puntuacion': 3, 'comentario': 'Lorem ipsum dolor sit amet consectetur...'},
+        'accordion-10': {'nombre': 'Tasca 3', 'puntuacion': 7, 'comentario': 'Lorem ipsum dolor sit amet consectetur...'},
+        'accordion-11': {'nombre': 'Tasca 4', 'puntuacion': 8, 'comentario': 'Lorem ipsum dolor sit amet consectetur...'},
+        'accordion-12': {'nombre': 'Tasca 5', 'puntuacion': 9, 'comentario': 'Lorem ipsum dolor sit amet consectetur...'}
+      }
     }
   },
   methods: {}
