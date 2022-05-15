@@ -75,7 +75,7 @@
             <b-icon-arrow-right></b-icon-arrow-right>
             <a href="#/assignatura/practicas">Pràctiques</a>
             <b-icon-arrow-right></b-icon-arrow-right>
-            <a href="#/assignatura/practicas/tasca">Entrega Pràctica 3</a>
+            <a>Entrega Pràctica 3</a>
           </div>
         </div> <!-- END barra navegacion -->
         <!-- descripcion -->
@@ -138,74 +138,133 @@
           <div class="shadow float-left"
                style="margin-top: 35px; background-color: #f8f8f8; margin-bottom: 20px; margin-left: 15px;
              width: 60%; min-width: 300px">
-              <div class="row" style="background-color: #accbee; padding: 12px 5px 12px 5px">
-                <div class="col 1 align-self-center" style="font-size: 18px; font-weight: bold">
-                  Entregues
-                </div>
-                <div class="col" style="text-align: right">
-                  <b-button variant="success" style="margin-right: 3px">
-                    <b-icon-download></b-icon-download>
-                    Excel
-                  </b-button>
-                  <b-button variant="success">
-                    <b-icon-upload></b-icon-upload>
-                    Excel
-                  </b-button>
-                </div>
+            <div class="row" style="background-color: #accbee; padding: 12px 5px 12px 5px">
+              <div class="col-1 align-self-center" style="font-size: 18px; font-weight: bold">
+                Entregues
               </div>
-              <div class="row bluesidebar" style="padding: 12px 5px 12px 5px">
-                <div class="col">
-                  Filtrar per...
-                  <select class="form-select-sm" aria-label="Default select example" style="width: 200px">
-                    <option selected>Selecciona una opció</option>
-                    <option value="1">grup de pràctiques</option>
-                    <option value="2">grup de treball</option>
-                  </select>
-                </div>
+              <div class="col " style="text-align: right">
+                <b-button variant="success" style="margin-right: 3px">
+                  <b-icon-download></b-icon-download>
+                  Excel
+                </b-button>
+                <b-button variant="success">
+                  <b-icon-upload></b-icon-upload>
+                  Excel
+                </b-button>
               </div>
-              <!-- lista de alumnos -->
-              <div class="overflow-auto" style=" max-height: 500px">
-                <table class="table table-hover">
-                  <thead>
-                  <tr>
-                    <th scope="col">
-                      <b-icon-check2-square style="margin-left: 10px"></b-icon-check2-square>
-                    </th>
-                    <th scope="col">Nom</th>
-                    <th scope="col">Cognoms</th>
-                    <th scope="col">Entrega</th>
-                    <th scope="col">Nota</th>
-                  </tr>
-                  </thead>
-                  <tbody>
-                  <tr v-for="(item) in items" :key="item">
-                    <th scope="row">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
-                             style="margin-left: 10px">
-                    </th>
-                    <td>{{ item.nom }}</td>
-                    <td>{{ item.cognoms }}</td>
-                    <td><button type="button" class="btn btn-outline-secondary btn-sm" style="margin-left: 10px">
-                      <b-icon-download></b-icon-download>
-                    </button></td>
-                    <td>{{ item.nota }}</td>
-                  </tr>
-                  </tbody>
-                </table>
-              </div>
-              <!-- END lista de alumnos -->
             </div>
+            <div class="row bluesidebar" style="padding: 12px 5px 12px 5px">
+              <div class="col">
+                <label for="exampleDataList" class="form-label">Buscar...</label>
+                <input class="form-control-sm" list="datalistOptions" id="exampleDataList"
+                       placeholder="Type to search...">
+                <datalist id="datalistOptions">
+                  <option value="Sara Pérez"></option>
+                  <option value="Gerard López"></option>
+                  <option value="Sergi Fernández"></option>
+                  <option value="Katia Garcia"></option>
+                  <option value="Chicago"></option>
+                </datalist>
+              </div>
+              <div class="col">
+                Filtrar per...
+                <select class="form-select-sm" aria-label="Default select example" style="width: 200px">
+                  <option selected>Selecciona una opció</option>
+                  <option value="1">grup de pràctiques</option>
+                  <option value="2">grup de treball</option>
+                </select>
+              </div>
+            </div>
+            <!-- lista de alumnos -->
+            <div class="overflow-auto" style=" max-height: 500px">
+              <table class="table table-hover">
+                <thead>
+                <tr>
+                  <th scope="col">
+                    <b-icon-check2-square style="margin-left: 10px"></b-icon-check2-square>
+                  </th>
+                  <th scope="col">Nom</th>
+                  <th scope="col">Cognoms</th>
+                  <th scope="col">Entrega</th>
+                  <th scope="col">Nota</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr v-for="(item) in items" :key="item">
+                  <th scope="row">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                           style="margin-left: 10px">
+                  </th>
+                  <td>{{ item.nom }}</td>
+                  <td>{{ item.cognoms }}</td>
+                  <td>
+                    <button type="button" class="btn btn-outline-secondary btn-sm" style="margin-left: 10px">
+                      <b-icon-download></b-icon-download>
+                    </button>
+                  </td>
+                  <td>{{ item.nota }}</td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- END lista de alumnos -->
+          </div>
           <!-------------------- END parte tabla entregas ------------------------->
           <!-------------------- parte cualificar --------------------------------->
           <div class="shadow graybg"
-               style="margin-top: 35px; margin-bottom: 20px; margin-left: 2%;
-               width: 35%; min-width: 200px">
-          <b-button> cosas </b-button>
+               style="margin-top: 155px; margin-bottom: 20px; margin-left: 2%;
+               width: 35%; min-width: 200px;">
+            <div class="row" style="background-color: #accbee; padding: 12px 15px 12px 15px">
+              <div class="col nomargins" style="font-size: 18px; font-weight: bold">
+                Qualificar
+              </div>
+            </div>
+            <div class="row bluesidebar" style="padding: 12px 15px 12px 15px">
+              <div class="col nomargins">
+                Modificant a: <span class="badge bg-primary">3</span>
+              </div>
+            </div>
+            <!----  poner nota  ---->
+            <div class="row" style="margin-bottom: 10px; margin-left: 12px; margin-top: 10px">
+              <div class="col nomargins">
+                Afegir o restar punts:
+              </div>
+            </div>
+            <div class="row" style="margin-bottom: 25px; margin-left: 12px">
+              <div class="col nomargins">
+                <b-form-spinbutton style="width: 150px"
+                                   id="sb-step"
+                                   v-model="value"
+                                   placeholder="0,00"
+                                   min="-4"
+                                   max="4"
+                                   step="0.25"
+                ></b-form-spinbutton>
+              </div>
+            </div>
+            <div class="form-floating mb-3" style="margin: 0 12px 0 12px">
+              <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+              <label for="floatingInput">Nota</label>
+            </div>
+            <!--- END poner nota  --->
+            <!-- poner comentario -->
+            <div class="form-floating" style="margin: 0 12px 0 12px">
+              <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                        style="height: 100px"></textarea>
+              <label for="floatingTextarea2">Comentaris:</label>
+            </div>
+            <!-- END poner comentario -->
+            <div class="row" style="margin-top: 20px; margin-left: 12px">
+              <div class="col nomargins">
+                <button type="button" class="btn btn-secondary" style="margin-right: 10px">Cancelar</button>
+                <button type="button" class="btn btn-primary">Publicar</button>
+              </div>
+            </div>
           </div>
           <!-------------------- END parte cualificar ----------------------------->
         </div>
         <!----------------------------------- END entrega PROFESSORS ----------------------------------------------->
-        <br><br><br><br><br><br><br><br>
+        <br><br><br>
       </div>
     </div>
   </div>

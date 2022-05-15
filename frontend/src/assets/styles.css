@@ -9,6 +9,10 @@
 .graybg {
   background-color: #f8f8f8;
 }
+.nomargins {
+  margin: 0;
+  padding: 0;
+}
 
 .custom-text-title {
   font-family: "Segoe UI", sans-serif;
