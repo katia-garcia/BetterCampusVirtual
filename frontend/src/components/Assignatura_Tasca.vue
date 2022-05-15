@@ -104,7 +104,7 @@
         <!--------------------------------------- entrega ALUMNES ------------------------------------------------->
         <div class="row shadow" v-if="$professorView.state === false"
              style="margin-top: 35px; background-color: #f8f8f8; margin-bottom: 20px; margin-left: 15px;
-             padding: 30px 5px 30px 5px; width: 60%; min-width: 300px">
+             padding: 30px 5px 30px 5px; width: 60%; min-width: 280px">
           <div class="col">
             <div class="row">
               <div class="col" style="font-size: 18px">
@@ -137,20 +137,20 @@
           <!-------------------- parte tabla entregas ------------------------->
           <div class="shadow float-left"
                style="margin-top: 35px; background-color: #f8f8f8; margin-bottom: 20px; margin-left: 15px;
-             width: 60%; min-width: 300px">
+             width: 60%; min-width: 280px">
             <div class="row" style="background-color: #accbee; padding: 12px 5px 12px 5px">
               <div class="col-1 align-self-center" style="font-size: 18px; font-weight: bold">
                 Entregues
               </div>
               <div class="col " style="text-align: right">
-                <b-button variant="success" style="margin-right: 3px">
+                <button type="button" class="btn btn-success btn-sm" style="margin-right: 3px">
                   <b-icon-download></b-icon-download>
                   Excel
-                </b-button>
-                <b-button variant="success">
+                </button>
+                <button type="button" class="btn btn-success btn-sm">
                   <b-icon-upload></b-icon-upload>
                   Excel
-                </b-button>
+                </button>
               </div>
             </div>
             <div class="row bluesidebar" style="padding: 12px 5px 12px 5px">
@@ -211,7 +211,7 @@
           </div>
           <!-------------------- END parte tabla entregas ------------------------->
           <!-------------------- parte cualificar --------------------------------->
-          <div class="shadow graybg"
+          <div class="shadow graybg d-none d-md-block"
                style="margin-top: 155px; margin-bottom: 20px; margin-left: 2%;
                width: 35%; min-width: 200px;">
             <div class="row" style="background-color: #accbee; padding: 12px 15px 12px 15px">
@@ -221,7 +221,7 @@
             </div>
             <div class="row bluesidebar" style="padding: 12px 15px 12px 15px">
               <div class="col nomargins">
-                Modificant a: <span class="badge bg-primary">3</span>
+                Modificant a: <span class="badge bg-primary">5</span> alumnes
               </div>
             </div>
             <!----  poner nota  ---->
@@ -326,34 +326,5 @@ export default {
 .row {
   width: 100%;
   margin: 0;
-}
-
-.custom-sidebar {
-  min-width: 350px;
-  max-width: 350px;
-  background-color: #D3E0EA;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  z-index: 999;
-}
-
-@media (max-width: 992px) {
-  .custom-sidebar {
-    min-width: 100px;
-    max-width: 100px;
-  }
-}
-
-.custom-no-sidebar {
-  margin-left: 350px;
-  margin-top: 20px
-}
-
-@media (max-width: 992px) {
-  .custom-no-sidebar {
-    margin-left: 100px;
-  }
 }
 </style>

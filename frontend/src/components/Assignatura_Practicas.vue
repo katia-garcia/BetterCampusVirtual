@@ -73,7 +73,7 @@
           <div class="col">
             <a href="#/assignatura">Factors Humans</a>
             <b-icon-arrow-right></b-icon-arrow-right>
-            <a href="#/assignatura/practicas">Pràctiques</a>
+            <a>Pràctiques</a>
           </div>
         </div> <!-- END barra navegacion -->
         <!-- -------------------------------------------CONTENIDO------------------------------------------------ -->
@@ -188,34 +188,5 @@ export default {
   margin-top: 10px;
   margin-bottom: 10px;
   margin-left: 25px;
-}
-
-.custom-sidebar {
-  min-width: 350px;
-  max-width: 350px;
-  background-color: #D3E0EA;
-  height: 100%;
-  margin: 0;
-  padding: 0;
-  position: fixed;
-  z-index: 999;
-}
-
-@media (max-width: 992px) {
-  .custom-sidebar {
-    min-width: 100px;
-    max-width: 100px;
-  }
-}
-
-.custom-no-sidebar {
-  margin-left: 350px;
-  margin-top: 20px
-}
-
-@media (max-width: 992px) {
-  .custom-no-sidebar {
-    margin-left: 100px;
-  }
 }
 </style>
