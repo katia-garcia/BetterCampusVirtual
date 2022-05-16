@@ -3,6 +3,78 @@
     <NavBar></NavBar>
     <div class="banner">
       <h1> Qualificacions </h1>
+      <div class="arrow" onclick="location.href='#/'">
+        <b-icon-caret-left-fill></b-icon-caret-left-fill>
+      </div>
+      <!--Càlcul nota button-->
+      <b-button id="popover-button-variant" class="calculator-button" variant="primary"  v-if="$professorView.state !== true">Càlcul nota</b-button>
+      <b-popover placement="left" target="popover-button-variant" variant="primary" triggers="click" v-if="$professorView.state !== true">
+        <div>
+        <!--Form input-->
+        <b-form-group
+          label="Introdueix la nota desitgada"
+          label-for="popover-input-1"
+          label-cols="20"
+          :state="input1state"
+        >
+          <b-form-input
+            ref="input1"
+            id="popover-input-1"
+            placeholder="Px0.4 + T+0.6"
+            v-model="input1"
+            :state="input1state"
+            size="sm"
+          ></b-form-input>
+        </b-form-group>
+        <!--END Form input-->
+        <!--Select Form input-->
+        <b-form-group
+          label="Assignatura"
+          label-for="popover-input-2"
+          label-cols="5"
+          class="form-input"
+          :state="input2state"
+        >
+          <b-form-select
+            id="popover-input-2"
+            v-model="input2"
+            :state="input2state"
+            :options="options"
+            class="form-input"
+            size="md"
+          ></b-form-select>
+        <!--END Select Form input-->
+        </b-form-group>
+
+      <div class="result-wrapper">
+          <b-button @click="calculateMark" class="calcul-button" variant="primary">
+            Càlcul
+          </b-button>
+
+          <b-form-group
+          label="Nota:"
+          label-for="popover-input-1"
+          label-cols="5"
+          :state="input3state"
+
+        >
+          <b-form-input
+            ref="input3"
+            id="popover-input-3"
+            placeholder="Px0.4 + T+0.6"
+            v-model="input3"
+            :state="input3state"
+            size="sm"
+            class="result-output"
+            :disabled="true"
+          ></b-form-input>
+          </b-form-group>
+
+      </div>
+
+        </div>
+      </b-popover>
+
     </div>
     <!-- Flex horizontal Layout -->
 
@@ -84,6 +156,15 @@ export default {
   },
   data () {
     return {
+      input1: '',
+      input1state: null,
+      input2: '',
+      input2state: null,
+      input3: '',
+      input3state: null,
+      input1Return: '',
+      input2Return: '',
+      options: [{'text': 'Lógica i Llenguatges', value: ''}, 'Software Distribuït', 'Factors Humans', 'Bases de Dades', 'Gràfics'],
       assignaturesA: {'accordion-1': 'Lógica i Llenguatges', 'accordion-2': 'Software Distribuït', 'accordion-3': 'Factors Humans', 'accordion-4': 'Bases de Dades', 'accordion-5': 'Gràfics'},
       assignaturesP: {'accordion-6': 'Factors Humans', 'accordion-7': 'Programació 2'},
       tasques: {'accordion-8': {'nombre': 'Tasca 1', 'puntuacion': 5, 'comentario': 'Lorem ipsum dolor sit amet consectetur...'},
@@ -94,7 +175,11 @@ export default {
       }
     }
   },
-  methods: {}
+  methods: {
+    calculateMark () {
+      this.input3 = 4.5
+    }
+  }
 }
 
 </script>

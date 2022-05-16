@@ -4,6 +4,8 @@ html{
 .banner{
   display: flex; 
   flex-direction: row;
+  padding: 15px 50px 15px 50px; 
+  align-items: center;
 }
 
 .accordion{
@@ -20,13 +22,13 @@ html{
 .accordion-button{
   display: flex;
   height: 3em; 
-  background-color: #66aae2; 
+  background-color: #accbee; 
   font-size: 20px;
   justify-content: flex-start;
   align-items: center;
   padding-left: 30px;
   border-radius:0px; 
-  border-color: #66aae2;
+  border-color: #accbee;
   font-weight: bold;
 
   margin: 0; 
@@ -35,13 +37,13 @@ html{
 .accordion-task-button{
   display: flex;
   height: 3em; 
-  background-color: #afd2ef; 
+  background-color: #d2e8f6; 
   font-size: 20px;
   justify-content: flex-start;
   align-items: center;
   padding: 30px;
   border-radius:0px; 
-  border-color: #afd2ef;
+  border-color: #d2e8f6;
   color: black;
   font-weight: bold;
   width: 100%;
@@ -73,6 +75,98 @@ html{
 }
 
 h1{
-  padding: 20px 20px 20px 50px; 
-  color:#0072CE; 
+  order:2; 
+  color:#1d85e8; 
+  flex-grow: 10;
+}
+
+.calculator-button{
+  order: 3; 
+  flex-grow: 1; 
+  width: 6em;
+  height: 4em;
+  font-size: 16px;
+}
+
+.form-input{
+  border:#1d85e8;
+  border-radius: 1px; 
+  margin-bottom: 10px;
+}
+.arrow{
+  order:1; 
+  flex-grow: 0.2; 
+  font-size: 26px;
+  padding-right: 50px; 
+  cursor:pointer; 
+}
+
+.result-wrapper{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.calcul-button{
+
+  margin-right: 20px;
+  width: 100px;
+  height: 50px;
+
+}
+.result-output{
+  margin-bottom: 10px;
+  width: 120px;
+}
+@media only screen and (max-width: 924px) {
+  .calculator-button{
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 760px) {
+  .accordion-button{
+    font-size: 15px;
+  }
+  .task-button{
+    font-size: 15px;
+  }
+  h1{
+    font-size: 30px; 
+  }
+  .arrow{
+    font-size: 15px;
+    padding-right: 10px; 
+  }
+  .calculator-button{
+    font-size: 12px;
+  }
+  @media only screen and (max-width: 500px) {
+    .banner{
+      padding: 10px 20px 10px 20px; 
+    }
+    .accordion{
+      padding: 0 20px 0 20px; 
+    }
+    .accordion-button{
+      font-size: 15px;
+    }
+    .accordion-task-button{
+      font-size: 15px;
+    }
+    .accordion-task-button .task-comment{
+      font-size: 10px;
+    }
+    h1{
+      padding-top: 5px;
+      font-size: 20px; 
+    }
+    .arrow{
+      font-size: 15px;
+      padding-right: 10px; 
+    }
+    .calculator-button{
+      font-size: 12px;
+      width: 9em;
+    }
+  }
 }
