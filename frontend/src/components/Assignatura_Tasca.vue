@@ -124,11 +124,27 @@
                   <b-icon-upload></b-icon-upload>
                   &nbsp;&nbsp;Afegir Tramesa
                 </b-button>
-                <b-modal id="modal-center" centered title="Entrega de la tasca">
+                <b-modal id="modal-center" centered title="Entrega de la tasca" @ok="showAlert">
                   <p class="my-4">Arrosega aqui la tasca</p>
                 </b-modal>
               </div>
             </div>
+            <b-alert
+              :show="dismissCountDown"
+              dismissible
+              variant="success"
+              @dismissed="dismissCountDown=0"
+              @dismiss-count-down="countDownChanged"
+              style="margin-top: 20px"
+            >
+              <p>La tramesa s'ha enviat correctament</p>
+              <b-progress
+                variant="success"
+                :max="dismissSecs"
+                :value="dismissCountDown"
+                height="4px"
+              ></b-progress>
+            </b-alert>
           </div>
         </div>
         <!------------------------------------ END entrega ALUMNES ------------------------------------------------->
@@ -299,6 +315,8 @@ export default {
         {nom: 'Geneva', cognoms: 'Wilson'},
         {nom: 'Jami', cognoms: 'Carney'}
       ],
+      dismissSecs: 5,
+      dismissCountDown: 0,
       options: [
         {value: null, text: 'Selecciona una opció'},
         {value: 'a', text: 'grup de pràctiques'},
@@ -306,6 +324,14 @@ export default {
         {value: {C: '3PO'}, text: 'This is an option with object value'},
         {value: 'd', text: 'This one is disabled', disabled: true}
       ]
+    }
+  },
+  methods: {
+    countDownChanged (dismissCountDown) {
+      this.dismissCountDown = dismissCountDown
+    },
+    showAlert () {
+      this.dismissCountDown = this.dismissSecs
     }
   }
 }
